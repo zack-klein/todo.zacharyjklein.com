@@ -1,2 +1,2 @@
-bucket_name = "template.zacharyjklein.com"
+bucket_name = "todo.zacharyjklein.com"
 region      = "us-east-1"

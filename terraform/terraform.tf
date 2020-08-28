@@ -2,7 +2,7 @@ terraform {
 
   backend "s3" {
     bucket = "zacharyjklein-state"
-    key    = "state/zacharyjklein.com.tfstate"
+    key    = "state/todo.zacharyjklein.com.tfstate"
     region = "us-east-1"
   }
 }
@@ -19,6 +19,6 @@ data "aws_acm_certificate" "web_cert" {
 
 module "website" {
   source = "github.com/zack-klein/s3-website"
-  bucket_name = "zacharyjklein.com"
+  bucket_name = "todo.zacharyjklein.com"
   acm_arn = data.aws_acm_certificate.web_cert.arn
 }

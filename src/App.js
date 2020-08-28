@@ -1,8 +1,14 @@
 import React from 'react';
-import Main from './Main';
+import Todos from './Todos';
 
-export default function App() {
+function App() {
   return (
-    <Main />
+    <div className="App">
+      <header className="App-header">
+        <Todos />
+      </header>
+    </div>
   );
 }
+
+export default App;
